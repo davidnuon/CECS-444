@@ -1,0 +1,39 @@
+INTEGER        : 1         
+INTEGER        : 12        
+INTEGER        : 123       
+REAL           : 1234      
+REAL           : 12321     
+INTEGER        : .2        
+MINUS          : -         
+REAL           : 12321     
+INTEGER        : .12       
+MINUS          : -         
+REAL           : 12321     
+INTEGER        : .12222    
+MINUS          : -         
+REAL           : 12321     
+INTEGER        : .12122    
+INTEGER        : [-12321.1]
+INTEGER        : [-12.365,3]
+REAL           : 12.365,3  
+INTEGER        : [-12321.12]
+CURRENCY       : $12221    
+CURRENCY       : $1221.12  
+INTEGER        : 2         
+CURRENCY       : $221221.12
+INTEGER        : 2         
+CURRENCY       : $.12      
+INTEGER        : 2         
+CURRENCY       : $2,222,222.12
+INTEGER        : 2         
+CURRENCY       : $222,222,222.12
+INTEGER        : 2         
+CURRENCY       : $222,222.12
+INTEGER        : 2         
+CURRENCY       : $222,222  
+INTEGER        : 222,222,212
+
+
+
+Identifiers List
+

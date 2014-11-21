@@ -1,0 +1,142 @@
+COMMENT        : // the beginning of the program
+IDENTIFIER     : program    Reserved Word
+IDENTIFIER     : test2     
+SEMICOLON      : ;         
+IDENTIFIER     : var        Reserved Word
+IDENTIFIER     : doe       
+COMMA          : ,         
+IDENTIFIER     : bread     
+COMMA          : ,         
+IDENTIFIER     : arm_leg   
+COLON          : :         
+IDENTIFIER     : money     
+SEMICOLON      : ;         
+IDENTIFIER     : a         
+COMMA          : ,         
+IDENTIFIER     : b         
+COMMA          : ,         
+IDENTIFIER     : ab        
+COLON          : :         
+IDENTIFIER     : string     Reserved Word
+SEMICOLON      : ;         
+COMMENT        : // type string
+IDENTIFIER     : c         
+COMMA          : ,         
+IDENTIFIER     : d         
+COMMA          : ,         
+IDENTIFIER     : cd        
+COLON          : :         
+IDENTIFIER     : int        Reserved Word
+SEMICOLON      : ;         
+COMMENT        : // type integer
+IDENTIFIER     : e         
+COMMA          : ,         
+IDENTIFIER     : gee       
+COLON          : :         
+IDENTIFIER     : float      Reserved Word
+SEMICOLON      : ;         
+COMMENT        : //float type
+IDENTIFIER     : begin      Reserved Word
+COMMENT        : //body    
+IDENTIFIER     : a          Seen
+COLON_EQUALS   : :=        
+STRING         : "bad"     
+SEMICOLON      : ;         
+IDENTIFIER     : b          Seen
+COLON_EQUALS   : :=        
+STRING         : "cat"     
+SEMICOLON      : ;         
+IDENTIFIER     : ab         Seen
+COLON          : :         
+IDENTIFIER     : a          Seen
+PLUS           : +         
+IDENTIFIER     : b          Seen
+SEMICOLON      : ;         
+COMMENT        : // merge strings
+IDENTIFIER     : c          Seen
+COLON_EQUALS   : :=        
+REAL           : 12345     
+SEMICOLON      : ;         
+IDENTIFIER     : d          Seen
+COLON_EQUALS   : :=        
+INTEGER        : 12,345,123
+SEMICOLON      : ;         
+IDENTIFIER     : e          Seen
+COLON_EQUALS   : :=        
+INTEGER        : [-12,345,123]
+SEMICOLON      : ;         
+IDENTIFIER     : bread      Seen
+EQUALS         : =         
+CURRENCY       : $12,123.05
+PLUS           : +         
+IDENTIFIER     : arm_leg    Seen
+SEMICOLON      : ;         
+IDENTIFIER     : cd         Seen
+COLON_EQUALS   : :=        
+IDENTIFIER     : c          Seen
+PLUS           : +         
+IDENTIFIER     : d          Seen
+SEMICOLON      : ;         
+COMMENT        : //add unsigned integers
+IDENTIFIER     : e          Seen
+COLON_EQUALS   : :=        
+INTEGER        : 444,444.13
+SEMICOLON      : ;         
+IDENTIFIER     : f         
+COLON_EQUALS   : :=        
+INTEGER        : [-444,444.13]
+IDENTIFIER     : gee        Seen
+COLON_EQUALS   : :=        
+IDENTIFIER     : c          Seen
+PLUS           : +         
+IDENTIFIER     : e          Seen
+PLUS           : +         
+SCIENTIFIC     : 3.1415^+002
+SEMICOLON      : ;         
+COMMENT        : //add signed integers and reals
+IDENTIFIER     : readln     Reserved Word
+FILE_TOKEN     : [A:file.txt]
+SEMICOLON      : ;         
+IDENTIFIER     : writeln    Reserved Word
+FILE_TOKEN     : [A:test]  
+SEMICOLON      : ;         
+IDENTIFIER     : for        Reserved Word
+OPEN_PAREN     : (         
+IDENTIFIER     : a          Seen
+COLON_EQUALS   : :=        
+INTEGER        : 1         
+SEMICOLON      : ;         
+IDENTIFIER     : a          Seen
+GREATER_THAN_EQUALS: <=        
+INTEGER        : 10        
+SEMICOLON      : ;         
+PLUS_PLUS      : ++        
+IDENTIFIER     : a          Seen
+CLOSE_PAREN    : )         
+IDENTIFIER     : readln     Reserved Word
+OPEN_PAREN     : (         
+STRING         : "almost finished!"
+CLOSE_PAREN    : )         
+SEMICOLON      : ;         
+IDENTIFIER     : end        Reserved Word
+DOT            : .         
+COMMENT        : // end program
+
+
+
+Identifiers List
+a	6
+e	4
+c	4
+d	3
+b	3
+arm_leg	2
+gee	2
+bread	2
+ab	2
+cd	2
+f	1
+test2	1
+money	1
+doe	1
+

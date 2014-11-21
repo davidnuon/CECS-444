@@ -1,0 +1,21 @@
+INTEGER        : 1         
+INTEGER        : 12        
+INTEGER        : 123       
+REAL           : 1234      
+REAL           : 12321     
+INTEGER        : .2        
+MINUS          : -         
+REAL           : 12321     
+INTEGER        : .12       
+MINUS          : -         
+REAL           : 12321     
+INTEGER        : .12222    
+MINUS          : -         
+REAL           : 12321     
+INTEGER        : .12122    
+ERROR          : [-12321.1]
+
+
+
+Identifiers List
+

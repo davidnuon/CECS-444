@@ -1,0 +1,302 @@
+(0, 'CARET', 1, [])
+(0, 'RIGHT_CURLY', 2, [])
+(0, 'RIGHT_BRACKET', 3, [])
+(0, 'SEMICOLON', 8, [])
+(0, 'OPEN_PAREN', 10, [])
+(0, 'TILDE', 12, [])
+(0, 'ASTERISK', 15, [])
+(0, 'AT', 19, [])
+(0, 'CLOSE_PAREN', 21, [])
+(0, 'AND', 22, [])
+(0, 'SINGLE_QUOTE', 27, [])
+(0, 'LEFT_CURLY', 28, [])
+(0, 'HASH', 14, [])
+
+// comment - [AS 29]
+	(0, 'FORWARD_SLASH', 4, [])
+	(4, 'FORWARD_SLASH', 29, [' forward_slash'])
+	(29, 'CARET', 29, [' comment'])
+	(29, 'RIGHT_CURLY', 29, [' comment'])
+	(29, 'RIGHT_BRACKET', 29, [' comment'])
+	(29, 'FORWARD_SLASH', 29, [' comment'])
+	(29, 'UNDERSCORE', 29, [' comment'])
+	(29, 'LESS_THAN', 29, [' comment'])
+	(29, 'MINUS', 29, [' comment'])
+	(29, 'DOT', 29, [' comment'])
+	(29, 'SEMICOLON', 29, [' comment'])
+	(29, 'QUOTE', 29, [' comment'])
+	(29, 'OPEN_PAREN', 29, [' comment'])
+	(29, 'PLUS', 29, [' comment'])
+	(29, 'TILDE', 29, [' comment'])
+	(29, 'COLON', 29, [' comment'])
+	(29, 'HASH', 29, [' comment'])
+	(29, 'ASTERISK', 29, [' comment'])
+	(29, 'DOLLAR', 29, [' comment'])
+	(29, 'EQUALS', 29, [' comment'])
+	(29, 'BANG', 29, [' comment'])
+	(29, 'AT', 29, [' comment'])
+	(29, 'GREATER_THAN', 29, [' comment'])
+	(29, 'CLOSE_PAREN', 29, [' comment'])
+	(29, 'AND', 29, [' comment'])
+	(29, 'DIGIT', 29, [' comment'])
+	(29, 'ALPHA', 29, [' comment'])
+	(29, 'LEFT_BRACKET', 29, [' comment'])
+	(29, 'COMMA', 29, [' comment'])
+	(29, 'SINGLE_QUOTE', 29, [' comment'])
+	(29, 'LEFT_CURLY', 29, [' comment'])
+
+/= [AS 29]
+	(0, 'FORWARD_SLASH', 4, [])
+	(4, 'EQUALS', 30, [' forward_slash'])
+
+<<
+	(0, 'LESS_THAN', 5, [])
+	(5, 'LESS_THAN', 31, [' less_than'
+	])
+
+<=
+	(0, 'LESS_THAN', 5, [])
+	(5, 'EQUALS', 32, [' less_than'])
+
+--
+	(0, 'MINUS', 6, [])
+	(6, 'MINUS', 33, [' minus'])
+
+-+
+	(0, 'MINUS', 6, [])
+	(6, 'PLUS', 34, [' minus'])
+
+"string" [AS 37]
+	(0, 'QUOTE', 9, [])
+	(9, 'CARET', 36, [' quote'])
+	(9, 'RIGHT_CURLY', 36, [' quote'])
+	(9, 'RIGHT_BRACKET', 36, [' quote'])
+	(9, 'FORWARD_SLASH', 36, [' quote'])
+	(9, 'UNDERSCORE', 36, [' quote'])
+	(9, 'LESS_THAN', 36, [' quote'])
+	(9, 'MINUS', 36, [' quote'])
+	(9, 'DOT', 36, [' quote'])
+	(9, 'SEMICOLON', 36, [' quote'])
+	(9, 'QUOTE', 37, [' quote'])
+	(9, 'OPEN_PAREN', 36, [' quote'])
+	(9, 'PLUS', 36, [' quote'])
+	(9, 'TILDE', 36, [' quote'])
+	(9, 'COLON', 36, [' quote'])
+	(9, 'HASH', 36, [' quote'])
+	(9, 'ASTERISK', 36, [' quote'])
+	(9, 'DOLLAR', 36, [' quote'])
+	(9, 'EQUALS', 36, [' quote'])
+	(9, 'BANG', 36, [' quote'])
+	(9, 'AT', 36, [' quote'])
+	(9, 'GREATER_THAN', 36, [' quote'])
+	(9, 'CLOSE_PAREN', 36, [' quote'])
+	(9, 'AND', 36, [' quote'])
+	(9, 'DIGIT', 36, [' quote'])
+	(9, 'ALPHA', 36, [' quote'])
+	(9, 'LEFT_BRACKET', 36, [' quote'])
+	(9, 'COMMA', 36, [' quote'])
+	(9, 'SINGLE_QUOTE', 36, [' quote'])
+	(9, 'LEFT_CURLY', 36, [' quote'])
+
+Unsiged Interger
+	(7, 'DIGIT', 35, [' dot'])
+	(35, 'DIGIT', 35, [' real_lit', ' double_comma_real'])
+
++-
+	(0, 'PLUS', 11, [])
+	(11, 'MINUS', 38, [' plus'])
+
+++
+	(0, 'PLUS', 11, [])
+	(11, 'PLUS', 39, [' plus'])
+
+:=
+	(0, 'COLON', 13, [])
+	(13, 'EQUALS', 40, [' colon'])
+
+$.DD [Short Currency]
+	(0, 'DOLLAR', 16, [])
+	(16, 'DOT', 41, [' dollar'])
+	(41, 'DIGIT', 55, [])
+	(55, 'DIGIT', 67, [])
+	[AS 67]
+
+==
+	0, 'EQUALS', 17, [])
+	(17, 'EQUALS', 43, [' equals'])
+	[AS 43]
+
+!=
+	(0, 'BANG', 18, [])
+	(18, 'EQUALS', 44, [' bang'])
+	[AS 44]	
+
+!!
+	(0, 'BANG', 18, [])
+	(18, 'BANG', 45, [' bang'])
+	[AS 45]
+
+><
+	(0, 'GREATER_THAN', 20, [])
+	(20, 'LESS_THAN', 46, [' greater_than'])
+	[AS 46]
+
+>=
+	(0, 'GREATER_THAN', 20, [])
+	(20, 'EQUALS', 47, [' greater_than'])
+	[AS 47]
+
+>>
+	(0, 'GREATER_THAN', 20, [])
+	(20, 'GREATER_THAN', 48, [' greater_than'])
+	[AS 48]
+
+D.D^+DDD
+	(0, 'DIGIT', 23, [])
+	(23, 'DOT', 49, [' int_lit'])
+	(49, 'DIGIT', 58, [' double_comma_real'])
+	(58, 'CARET', 70, [' real_lit', ' double_comma_real']
+	(70, 'PLUS', 82, [])
+	(82, 'DIGIT', 94, [])
+	(94, 'DIGIT', 107, [' scientific'])
+	(107, 'DIGIT', 112, [' scientific'])
+	[AS 107 112]
+
+$D.DD (Currency)
+	(0, 'DOLLAR', 16, [])
+	(16, 'DIGIT', 42, [' dollar'])
+	(42, 'DOT', 41, [])
+	(41, 'DIGIT', 55, [])
+	(55, 'DIGIT', 67, [])
+	[AS 67]
+
+$DDD
+	(0, 'DOLLAR', 16, [])
+	(16, 'DIGIT', 42, [' dollar'])
+	(42, 'DIGIT', 56, [])
+	(56, 'DIGIT', 68, [])
+	(68, 'DIGIT', 80, [])
+	(80, 'DIGIT', 80, [])
+	[AS 80]
+
+$D,DDD,DDD
+	(0, 'DOLLAR', 16, [])
+	(16, 'DIGIT', 42, [' dollar'])
+	(42, 'COMMA', 57, [])
+	(57, 'DIGIT', 69, [])
+	(69, 'DIGIT', 81, [])
+	(81, 'DIGIT', 93, [])
+	(93, 'COMMA', 57, [])
+
+D.DD^+D
+	(0, 'DIGIT', 23, [])
+	(23, 'DOT', 49, [' int_lit'])
+	(49, 'DIGIT', 58, [' double_comma_real'])
+	(58, 'DIGIT', 71, [' real_lit', ' double_comma_real'])
+	(71, 'CARET', 70, [' real_lit', ' double_comma_real'])
+	(70, 'PLUS', 82, [])
+	(82, 'DIGIT', 94, [])
+	(94, 'DIGIT', 107, [' scientific'])
+
+DD.DDD+
+	(0, 'DIGIT', 23, [])
+	(23, 'DIGIT', 50, [' int_lit'])
+	(50, 'DOT', 59, [' int_lit'])
+	(59, 'DIGIT', 72, [' double_comma_real'])
+	(72, 'DIGIT', 84, [' real_lit', ' double_comma_real'])
+	(84, 'DIGIT', 97, [' real_lit', ' double_comma_real'])
+	(97, 'DIGIT', 98, [' real_lit', ' double_comma_real'])
+	(98, 'DIGIT', 98, [' real_lit', ' double_comma_real'])
+
+
+DDD.
+	(0, 'DIGIT', 23, [])
+	(23, 'DIGIT', 50, [' int_lit'])
+	(50, 'DIGIT', 60, [' int_lit'])
+	(60, 'DOT', 59, [' int_lit'])
+
+
+
+DD,DDD.DDD
+	(0, 'DIGIT', 23, [])
+	(23, 'DIGIT', 50, [' int_lit'])
+	(50, 'COMMA', 51, [' int_lit'])
+	(51, 'DIGIT', 61, [])
+	(61, 'DIGIT', 74, [])
+	(74, 'DIGIT', 86, [])
+	(86, 'DOT', 99, [])
+	(99, 'DIGIT', 108, [])
+	(108, 'DIGIT', 113, [' double_comma_real'])
+	(113, 'DIGIT', 116, [' double_comma_real'])
+	(116, 'COMMA', 96, [' double_comma_real'])
+	(96, 'DIGIT', 108, [])
+
+[-DDD+]
+	(0, 'LEFT_BRACKET', 25, [])
+	(25, 'MINUS', 52, [' left_bracket'])
+	(52, 'DIGIT', 62, [])
+	(62, 'DIGIT', 75, [])
+	(75, 'DIGIT', 87, [])
+	(87, 'DIGIT', 100, [' signed_int_literal'])
+	(100, 'DIGIT', 100, [' signed_int_literal'])
+	(100, 'RIGHT_BRACKET', 63, [' signed_int_literal'])
+	[AS 63]
+
+[A:(L|D)+.(L|D)*]
+	(0, 'LEFT_BRACKET', 25, [])
+	(25, 'ALPHA', 54, [' left_bracket'])
+	(54, 'COLON', 66, [])
+	(66, 'DIGIT', 79, [])
+	(66, 'ALPHA', 79, [])
+	(79, 'DOT', 92, [])
+	(92, 'DIGIT', 106, [])
+	(92, 'ALPHA', 106, [])
+	(106, 'RIGHT_BRACKET', 105, [])
+	(106, 'DIGIT', 106, [])
+	(106, 'ALPHA', 106, [])
+
+[-DDD,DDD,]
+	(0, 'LEFT_BRACKET', 25, [])
+	(25, 'MINUS', 52, [' left_bracket'])
+	(52, 'DIGIT', 62, [])
+	(62, 'DIGIT', 75, [])
+	(75, 'DIGIT', 87, [])
+	(87, 'COMMA', 101, [' signed_int_literal'])
+	(101, 'DIGIT', 109, [])
+	(109, 'DIGIT', 114, [])
+	(114, 'DIGIT', 117, [])
+
+
+[DDD]
+	(0, 'LEFT_BRACKET', 25, [])
+	(25, 'DIGIT', 53, [' left_bracket'])
+	(53, 'DIGIT', 64, [])
+	(64, 'DIGIT', 77, [])
+	(77, 'RIGHT_BRACKET', 63, [' signed_int_literal'])
+
+
+[DDD+]
+	(0, 'LEFT_BRACKET', 25, [])
+	(25, 'DIGIT', 53, [' left_bracket'])
+	(53, 'DIGIT', 64, [])
+	(64, 'DIGIT', 77, [])
+	(77, 'DIGIT', 89, [' signed_int_literal'])
+	(89, 'RIGHT_BRACKET', 63, [' signed_int_literal'])
+
+[D,DDD]
+	(0, 'LEFT_BRACKET', 25, [])
+	(25, 'DIGIT', 53, [' left_bracket'])
+	(53, 'COMMA', 65, [])
+	(65, 'DIGIT', 78, [])
+	(78, 'DIGIT', 91, [])
+	(91, 'DIGIT', 104, [])
+	(104, 'COMMA', 65, [])
+	(104, 'RIGHT_BRACKET', 63, [])
+
+
+$D,DD
+	(0, 'DOLLAR', 16, [])
+	(16, 'DIGIT', 42, [' dollar'])
+	(42, 'COMMA', 57, [])
+	(57, 'DIGIT', 69, [])
+	(69, 'DIGIT', 81, [])
